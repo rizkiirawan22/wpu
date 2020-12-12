@@ -49,7 +49,7 @@ if (isset($_POST["cari"])) {
                 <td><img style="width: 100px;" src="img/<?= $row["gambar"]; ?>" alt=""></td>
                 <td>
                     <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('Yakin?')">Hapus</a>
-                    <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a>
+                    <a href="ubah.php?id=<?= $row["id"]; ?>">Edit</a>
                 </td>
             </tr>
         <?php endforeach; ?>
