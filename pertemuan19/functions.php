@@ -16,6 +16,19 @@ function query($query)
     return $rows;
 }
 
+function cari($keyword)
+{
+    $query = "SELECT * FROM tbl_buku
+                WHERE
+                judul LIKE '%$keyword%' OR
+                pengarang LIKE '%$keyword%' OR
+                tahun_terbit LIKE '%$keyword%' OR
+                penerbit LIKE '%$keyword%'
+                ";
+    return query($query);
+}
+
+
 
 function tambah($data)
 {
